@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "Tools.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,27 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    [self.window makeKeyAndVisible];
+    Tools *tools = [[Tools alloc] init];
+    NSString *name = [tools resetLaunchImage];
+    UIImageView *imageView = [[UIImageView alloc] init];
+    imageView.image = [UIImage imageNamed:name];
+    imageView.frame = [UIScreen mainScreen].bounds;
+    
+    NSString *imagePath = @"https://v5oss.vchat6.com/prod/image/52_1543459119000_y9cnr7chbcgj3sczuwv4";
+    UIImage *launchImage = [tools loadLocalImage:imagePath];
+    if (launchImage) {
+        imageView.image = launchImage;
+    }
+    [self.window addSubview:imageView];
+    [UIView animateWithDuration:2.f delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+        imageView.alpha = 0.0;
+        imageView.layer.transform=CATransform3DScale(CATransform3DIdentity,1.2,1.2,1);
+    } completion:^(BOOL finished) {
+        [imageView removeFromSuperview];
+    }];
     return YES;
 }
 

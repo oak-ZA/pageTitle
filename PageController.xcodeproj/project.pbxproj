@@ -17,6 +17,7 @@
 		A60C2B6D233A15F3007BAA6C /* PageControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A60C2B6C233A15F3007BAA6C /* PageControllerUITests.m */; };
 		A60C2B88233A290A007BAA6C /* ZATitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A60C2B87233A290A007BAA6C /* ZATitleView.m */; };
 		A6F6CE83233B152500D93C20 /* CCZSegementController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F6CE81233B152500D93C20 /* CCZSegementController.m */; };
+		A6F6CE8B233B374F00D93C20 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F6CE8A233B374F00D93C20 /* Tools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		A60C2B87233A290A007BAA6C /* ZATitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZATitleView.m; sourceTree = "<group>"; };
 		A6F6CE81233B152500D93C20 /* CCZSegementController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCZSegementController.m; sourceTree = "<group>"; };
 		A6F6CE82233B152500D93C20 /* CCZSegementController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCZSegementController.h; sourceTree = "<group>"; };
+		A6F6CE89233B374F00D93C20 /* Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		A6F6CE8A233B374F00D93C20 /* Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				A60C2B87233A290A007BAA6C /* ZATitleView.m */,
 				A6F6CE82233B152500D93C20 /* CCZSegementController.h */,
 				A6F6CE81233B152500D93C20 /* CCZSegementController.m */,
+				A6F6CE89233B374F00D93C20 /* Tools.h */,
+				A6F6CE8A233B374F00D93C20 /* Tools.m */,
 				A60C2B4E233A15F0007BAA6C /* Main.storyboard */,
 				A60C2B51233A15F3007BAA6C /* Assets.xcassets */,
 				A60C2B53233A15F3007BAA6C /* LaunchScreen.storyboard */,
@@ -275,6 +280,7 @@
 				A60C2B88233A290A007BAA6C /* ZATitleView.m in Sources */,
 				A60C2B4D233A15F0007BAA6C /* ViewController.m in Sources */,
 				A60C2B58233A15F3007BAA6C /* main.m in Sources */,
+				A6F6CE8B233B374F00D93C20 /* Tools.m in Sources */,
 				A6F6CE83233B152500D93C20 /* CCZSegementController.m in Sources */,
 				A60C2B4A233A15F0007BAA6C /* AppDelegate.m in Sources */,
 			);
@@ -445,6 +451,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PageController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -461,6 +468,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PageController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
